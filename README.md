@@ -1,4 +1,3 @@
-# blockchain-secure-data-storage
 # 🔐 Blockchain-Based Confidential Storage for Healthcare Records
 
 This project implements a secure blockchain-based system for storing sensitive medical or drug-review data using encryption, digital signatures, and proof-of-work. Each record from the dataset is encrypted with a key derived from an ECDSA private key, then stored as a block containing a timestamp, hash linkage, and a cryptographic signature to ensure authenticity and integrity. The blockchain verifies each block using the public key alone, making tampering immediately detectable. Finally, the encrypted records are safely decrypted and reconstructed back into a complete pandas DataFrame, demonstrating an end-to-end workflow for confidential, tamper-evident healthcare data storage.
